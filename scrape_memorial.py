@@ -69,7 +69,7 @@ if uploaded_file:
         hotel_id = row["HotelID"]
         start_date = pd.to_datetime(row["StartDate"])
 
-        for day_offset in range(60):
+        for day_offset in range(5):
             check_date = start_date + timedelta(days=day_offset)
             st.text(f"Checking hotel {hotel_id} for {check_date.strftime('%Y-%m-%d')}")
             data = fetch_availability(hotel_id, check_date)
