@@ -37,7 +37,7 @@ if st.button("Check Availability"):
 
         all_rows = []
 
-        for day_offset in range(60):  # next 60 days
+        for day_offset in range(10):  # next 10 days
             check_date = start_date + timedelta(days=day_offset)
             st.text(f"Checking {check_date.strftime('%Y-%m-%d')}...")
 
