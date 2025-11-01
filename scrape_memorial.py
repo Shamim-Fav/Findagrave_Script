@@ -71,7 +71,7 @@ start_date = st.date_input("Select start date", datetime.today())
 if st.button("Check Availability"):
     all_rows = []
 
-    for day_offset in range(60):  # Next 60 days
+    for day_offset in range(10):  # Next 10 days
         check_date = start_date + timedelta(days=day_offset)
         st.text(f"Checking {check_date.strftime('%Y-%m-%d')}...")
         data = fetch_availability(HOTEL_ID, check_date)
