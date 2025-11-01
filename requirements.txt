@@ -1,5 +1,4 @@
-requests
-beautifulsoup4
+streamlit
 pandas
-js2py
+requests
 openpyxl
